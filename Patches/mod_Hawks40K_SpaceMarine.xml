@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+<!--  Space Marine Armour (standard)  -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Hawks_Base_Armor"]/statBases</xpath>
+        <value>
+            <statBases>
+                <WorkToMake>50000</WorkToMake>
+                <MaxHitPoints>2400</MaxHitPoints>
+                <Mass>12</Mass>
+                <Flammability>0.0</Flammability>
+                <ArmorRating_Sharp>2.55</ArmorRating_Sharp>
+                <ArmorRating_Blunt>1.40</ArmorRating_Blunt>
+                <ArmorRating_Heat>1.80</ArmorRating_Heat>
+                <Insulation_Cold>80</Insulation_Cold>
+                <Insulation_Heat>130</Insulation_Heat>
+                <EquipDelay>4</EquipDelay>
+            </statBases>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Hawks_Base_Armor"]/equippedStatOffsets</xpath>
+        <value>
+            <equippedStatOffsets>
+                <ShootingAccuracyPawn>0.20</ShootingAccuracyPawn>
+                <CarryingCapacity>50</CarryingCapacity>
+                <ToxicEnvironmentResistance>0.65</ToxicEnvironmentResistance>
+            </equippedStatOffsets>
+        </value>
+    </Operation>
+
+
